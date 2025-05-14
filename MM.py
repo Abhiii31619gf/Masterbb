@@ -585,4 +585,4 @@ def main():
     app.add_handler(CommandHandler("help", show_help))
     
     # Button handlers
-    app.add_handler(CallbackQueryHandler(control_attack, patter
+    app.add_handler(CallbackQueryHandler(control_attack, pattern='^(stop_attack|attack_info|confirm_.*|cancel_attack)$'))
